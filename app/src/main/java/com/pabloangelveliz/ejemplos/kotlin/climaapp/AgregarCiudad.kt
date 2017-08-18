@@ -30,7 +30,10 @@ class AgregarCiudad : AppCompatActivity() {
 
         i.putExtra("nombreCiudad", cityName.text.toString())
 
-        setResult(Activity.RESULT_OK, i)
+        if(cityName.text.isNotEmpty())
+            setResult(Activity.RESULT_OK, i)
+        else
+            setResult(Activity.RESULT_CANCELED, i)
         finish()
     }
 

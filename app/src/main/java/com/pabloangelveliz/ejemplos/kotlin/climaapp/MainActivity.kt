@@ -243,32 +243,35 @@ class MainActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: String?) {
 
-            super.onPostExecute(result)
+            try {
+                super.onPostExecute(result)
 
-            val json = JSONObject(result)
+                val json = JSONObject(result)
 
-            val json_main = json.getJSONObject("main")
-            val json_array_weather = json.getJSONArray("weather")
+                val json_main = json.getJSONObject("main")
+                val json_array_weather = json.getJSONArray("weather")
 
-            val temp_kelvin = json_main.getDouble("temp")
-            val pressure = json_main.getLong("pressure")
-            val humidity = json_main.getLong("humidity")
+                val temp_kelvin = json_main.getDouble("temp")
+                val pressure = json_main.getLong("pressure")
+                val humidity = json_main.getLong("humidity")
 
-            var temp_description = ""
-            var temp_icon = ""
+                var temp_description = ""
+                var temp_icon = ""
 
-            for (i in 0 .. json_array_weather.length()-1) {
+                for (i in 0..json_array_weather.length() - 1) {
 
-                val json_weather = json_array_weather.getJSONObject(i)
+                    val json_weather = json_array_weather.getJSONObject(i)
 
-                temp_description = json_weather.getString("description")
-                temp_icon = json_weather.getString("icon")
-            }
+                    temp_description = json_weather.getString("description")
+                    temp_icon = json_weather.getString("icon")
+                }
 
-            tvTemperature.text = kelvinConversion(temp_kelvin)
-            tvDescription.text = temp_description
-            imgWeather.setImageResource( context.resources.getIdentifier("weather_"+temp_icon, "drawable", context.packageName) )
-                                                                                                                                                        }
+                tvTemperature.text = kelvinConversion(temp_kelvin)
+                tvDescription.text = temp_description
+                imgWeather.setImageResource(context.resources.getIdentifier("weather_" + temp_icon, "drawable", context.packageName))
+            } catch (e: Exception) {
+                Toast.makeText(context, context.resources.getString(R.string.AsyncTaskError), Toast.LENGTH_LONG).show()
+            }                                                                                                                                    }
 
         fun kelvinConversion(kelvin_temperature : Double): String {
 
