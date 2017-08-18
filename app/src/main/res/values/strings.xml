@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Clima App</string>
+    <string name="lblMenuAbouUs">Acerca de</string>
+
+    <array name="cities_array">
+        <item>Buenos Aires, AR</item>
+        <item>London, UK</item>
+        <item>New York, NY</item>
+        <item>Distrito Federal, MX</item>
+        <item>Sydney, Australia</item>
+        <!--item>Buenos Aires, AR</item>
+        <item>London, UK</item>
+        <item>New York, NY</item>
+        <item>Distrito Federal, MX</item>
+        <item>Sydney, Australia</item>
+        <item>Buenos Aires, AR</item>
+        <item>London, UK</item>
+        <item>New York, NY</item>
+        <item>Distrito Federal, MX</item>
+        <item>Sydney, Australia</item -->
+    </array>
+
+    <string name="JsonURL">http://api.openweathermap.org/data/2.5/weather?q=#CITY#&amp;appid=a6394575a739b2dd246b1514e72e0b02</string>
+    <string name="ciudadInicial">Buenos Aires, AR</string>
+
+    <string name="lblAddCityTitle">Agregar Ciudad</string>
+    <string name="lblButtoAddCity">Agregar Ciudad</string>
+    <string name="hintCityName">Ingrese ej: London o London,UK</string>
+    <string name="lblMenuAddCity">Agregar Ciudad</string>
+    <string name="AddCity_Toolbar_Title">Acerca de</string>
+    <string name="About_Toolbar_Title">Acerca de</string>
+    <string name="about_Title">Clima App</string>
+    <string name="About_Pablo_Name">Pablo Angel Veliz</string>
+    <string name="About_Pablo_Headline">Android Instructor at IT Master, UTN, Universidad Favaloro, Dev Manager en VN Studios</string>
+    <string name="About_Description">Clima App es una aplicación desarrollada en Kotlin con fines educativos. Todo el código puede ser descargado de Github en:\n\n https://github.com/paveliz \n\nY podrán encontrar capaciones y artículos sobre el uso de Kotlin en Android en:\n\n http://paveliz.blogspot.com.ar/</string>
+    <string name="About_ln_url">https://www.linkedin.com/in/pabloveliz/</string>
+    <string name="About_blogspot_url">http://paveliz.blogspot.com.ar/</string>
+    <string name="lblmenuCodigoMainActivity">MainActivity.kt</string>
+    <string name="lblmenuCodigoAgregarCiudad">AgregarCiudad.kt</string>
+    <string name="lblmenuCodigoTutorial">Tutorial.kt</string>
+    <string name="lblmenuCodigoTutorialAbout">About.kt</string>
+
+</resources>
