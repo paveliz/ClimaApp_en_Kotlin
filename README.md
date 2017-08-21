@@ -11,5 +11,5 @@ La aplicación cubre temas de desarrollo como:
 
 Ver más información y tutoriales en mi blog: https://paveliz.blogspot.com.ar/
 
-!https://s3-us-west-2.amazonaws.com/paveliz-github-images/climaapp_home.png!
+![Home] (https://s3-us-west-2.amazonaws.com/paveliz-github-images/climaapp_home.png)
 
