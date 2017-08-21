@@ -1,4 +1,7 @@
 # ClimaApp_en_Kotlin
+
+Click [HERE](https://github.com/paveliz/ClimaApp_en_Kotlin/wiki/Kotlin-Clima-App-(english)) for English version!
+
 ClimaApp es una aplicación desarrollada en Kotlin a los fines de enseñar sobre el nuevo lenguaje de programación para Android.
 
 La aplicación cubre temas de desarrollo como:
