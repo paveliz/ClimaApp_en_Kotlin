@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Clima App</string>
+    <string name="app_name">Kotlin Clima App</string>
     <string name="lblMenuAbouUs">Acerca de</string>
 
     <array name="cities_array">
