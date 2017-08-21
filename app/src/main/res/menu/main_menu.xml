@@ -10,7 +10,7 @@
         android:title="@string/lblMenuAbouUs" />
     <item
         android:id="@+id/menuCode"
-        android:title="Ver Código">
+        android:title="@string/lblMenuShowCode">
 
         <menu>
             <group android:id="@+id/code_group">

@@ -267,7 +267,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 tvTemperature.text = kelvinConversion(temp_kelvin)
-                tvDescription.text = temp_description
+                tvDescription.text = temp_description.capitalize()
                 imgWeather.setImageResource(context.resources.getIdentifier("weather_" + temp_icon, "drawable", context.packageName))
             } catch (e: Exception) {
                 Toast.makeText(context, context.resources.getString(R.string.AsyncTaskError), Toast.LENGTH_LONG).show()
