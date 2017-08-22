@@ -1,4 +1,4 @@
-package com.pabloangelveliz.ejemplos.kotlin.climaapp
+package com.pabloangelveliz.ejemplos.desarrollo.climaapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

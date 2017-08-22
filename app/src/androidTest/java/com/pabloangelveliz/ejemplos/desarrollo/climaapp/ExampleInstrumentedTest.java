@@ -1,4 +1,4 @@
-package com.pabloangelveliz.ejemplos.kotlin.climaapp;
+package com.pabloangelveliz.ejemplos.desarrollo.climaapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

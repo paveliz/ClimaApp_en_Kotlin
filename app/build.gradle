@@ -5,11 +5,11 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
     defaultConfig {
-        applicationId "com.pabloangelveliz.ejemplos.kotlin.climaapp"
+        applicationId "com.pabloangelveliz.ejemplos.desarrollo.climaapp"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 8
+        versionName "1.32"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

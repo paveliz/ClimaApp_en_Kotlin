@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kotlin Clima App</string>
+    <string name="app_name">Clima App</string>
     <string name="lblMenuAbouUs">About this App</string>
     <string name="lblMenuAddCity">Add City</string>
     <string name="lblButtoAddCity">Add City</string>
@@ -10,7 +10,7 @@
     <string name="AddCity_Toolbar_Title">Add City</string>
     <string name="hintCityName">complete ie: London o London,UK</string>
     <string name="About_Toolbar_Title">About</string>
-    <string name="About_Description">Clima App is an application developed in Kotlin for educational purposes. All the code can be downloaded from Github at: https://github.com/paveliz And you can find more articles on using Kotlin on Android at: http://paveliz.blogspot.com.ar/</string>
-    <string name="About_Pablo_Headline">Android Instructor at IT Master, UTN, Universidad Favaloro, Dev Manager en VN Studios</string>
+    <string name="About_Description">Clima App is an application developed in Kotlin for educational purposes. All the code can be downloaded from Github at: https://github.com/paveliz And you can find more articles on using Kotlin on Android at: http://paveliz-en.blogspot.com.ar/</string>
+    <string name="About_Pablo_Headline">Android Instructor at IT Master, UTN, Favaloro Unversity, Dev Manager at VN Studios</string>
     <string name="lblMenuShowCode">Show Code</string>
 </resources>
