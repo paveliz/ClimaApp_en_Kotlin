@@ -18,7 +18,7 @@ class Tutorial : AppCompatActivity() {
 
         val nombreArchivo = intent.getStringExtra("codeFile")
 
-        var webviewTutorial = findViewById(R.id.webviewTutorial) as WebView
+        val webviewTutorial = findViewById(R.id.webviewTutorial) as WebView
 
 
         webviewTutorial.settings.setSupportZoom(false)

@@ -125,7 +125,6 @@ class MainActivity : AppCompatActivity() {
             GetWeatherTask(parent.context, txtTemp, txtDesc, imgWeahter).execute(resources.getString(R.string.JsonURL).replace("#CITY#", sCityName, false))
         }
 
-
     }
 
     //region ### METODOS vs FUN y OVERRIDE ###
@@ -157,6 +156,11 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
+    /*
+    En la siguiente línea, resuelvo y simplifico el típico switch que solemos hacer en
+    java para el selector del menú en el onOptionsItemSelected, haciendo uso del WHEN y
+    de una lambda expression.
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         val menu_id = item.itemId
@@ -169,28 +173,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(i)
             }
 
-            R.id.menuCodigoAgregarCiudad -> {
-                val i = Intent(this, Tutorial::class.java)
-                i.putExtra("codeFile","AgregarCiudad.html")
-                startActivity(i)
-            }
-
-            R.id.menuCodigoTutorial -> {
-                val i = Intent(this, Tutorial::class.java)
-                i.putExtra("codeFile","Tutorial.html")
-                startActivity(i)
-            }
-
-            R.id.menuCodigoAbout -> {
-                val i = Intent(this, Tutorial::class.java)
-                i.putExtra("codeFile","Acerca.html")
-                startActivity(i)
-            }
-
-            R.id.menuAbout -> {
-                val i = Intent(this, Acerca::class.java)
-                startActivity(i)
-            }
+            ...
 
             R.id.menuAgregarCiudad -> {
                 val i = Intent(this, AgregarCiudad::class.java)
@@ -199,6 +182,37 @@ class MainActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+     */
+
+    override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId) {
+
+        R.id.menuCodigoMainActivity -> menuItemCaller {
+            startActivity(Intent(this, Tutorial::class.java).putExtra("codeFile", "MainActivity.kt.html"))
+        }
+
+        R.id.menuCodigoAgregarCiudad ->  menuItemCaller {
+            startActivity(Intent(this, Tutorial::class.java).putExtra("codeFile", "AgregarCiudad.kt.html"))
+        }
+        R.id.menuCodigoTutorial -> menuItemCaller {
+            startActivity(Intent(this, Tutorial::class.java).putExtra("codeFile", "Tutorial.kt.html"))
+        }
+        R.id.menuCodigoAbout ->  menuItemCaller {
+            startActivity(Intent(this, Tutorial::class.java).putExtra("codeFile", "Acerca.kt.html"))
+        }
+        R.id.menuAbout -> menuItemCaller {
+            startActivity(Intent(this, Acerca::class.java))
+        }
+        R.id.menuAgregarCiudad ->  menuItemCaller {
+            startActivityForResult(Intent(this, AgregarCiudad::class.java), 100)
+        }
+
+        else -> super.onOptionsItemSelected(item)
+    }
+
+    private fun menuItemCaller(f: () -> Unit): Boolean {
+        f()
+        return true
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)  {
